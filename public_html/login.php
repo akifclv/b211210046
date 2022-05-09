@@ -2,11 +2,11 @@
 
 
 
-if($_POST['email']=="b211210053@sakarya.edu.tr"&& $_POST['şifre']=="b211210053"){
-    header("location:http://localhost/public_html/index.html");
-    
+if(($_POST["email"]=="b211210046@sakarya.edu.tr")&&($_POST["sifre"]=="b211210046")){
+    header("location:http://localhost/public_html/bekleme.php");
 }
 else{
+
     header("location:http://localhost/public_html/login.html");
 }
 
