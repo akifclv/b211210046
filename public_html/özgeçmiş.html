@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="ozgecmis.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-dark bg-dark bg-opacity-50 navbar-expand-lg  text-white">
+    <div class="container py-2">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="#">Login</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active " aria-current="page"   href="#">Hakkında</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="#">Özgeçmiş</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="#">Şehrim</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="#">Mirasımız</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <article id="merhaba">
+
+    <div class="w3-container ">
+    
+    
+    </div>
+    
+    <div class="w3-content w3-display-container">
+    
+    <div class="w3-display-container mySlides">
+      <img src="1.jpg" style="width:100%">
+      <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+        Kurtuluş Namık Kemal İlkokulu
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="2.jpg" style="width:100%">
+      <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+        Toki Cevizkent Bahaddin Gazi Ortaokulu
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="3.jpg" style="width:100%">
+      <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+        Alparslan Gazi Anadolu Lisesi
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="4.jpg" style="width:100%">
+      <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+         Sakarya üniversitesi
+      </div>
+    </div>
+    
+
+    
+    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+    
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+</article>
+<section>
+<div class="container col-8" id="container">
+  <div >
+
+      <h5>Kurtuluş Namık Kemal Ortaokulu</h5>
+      <p>Eğitim ve Öğretim hayatıma doğduğum mahallede Karabük'ün Kurtuluş Mahallesi ilkokulunda başladım.5.sınıfa kadar burada eğitim gördüm daha sonra okumulumuz kapandığı için başka ortaokula gitmek zorunda kaldım.</p>
+
+  </div>
+</div>
+</section>
+<section>
+  <div class="container col-8" id="container">
+    <div >
+      
+        <h5 >Toki Cevizkent Bahaddin Gazi Ortaokulu</h5>
+        <p> Ortaokul hayatıma Toki Cevizkent Bahaddin Gazi Ortaokulu ile basladım.Önceki mahallemizden tasındıgımız icin burada egitim ve öğretim hayatıma devam edecektim.Ortaokul hayatım için benim için faydalı geçti.Bulunduğum şehrin en iyi okullarından birinde eğitim gorecektim.Okulda hem eğitim imkanları hem de hobi ve sevdiğimiz aktiviteleri gerçekleştirebileceğimiz imkanlar sunuluyordu.Daha sonra okulum ve destekleme yetiştirme kursları sayesinde Merkezi sınavlarda güzel bir derece elde ettim.</p>
+   
+    </div>
+  </div>
+  </section>
+  <section>
+    <div class="container col-8" id="container">
+      <div >
+      
+          <h5>Alparslan Gazi Anadolu Lisesi</h5>
+          <p> Merkezi sınavlar sonucunda bulunduğum şehirin en iyi ikinci lisesine yerleşme fırsatı buldum.Yaşanmışlıklarla dolu bir lise hayatı içerisinden Alparslan Gazi Anadolu Lisesinden 2020 yılında mezun oldum.</p>
+    </div>
+      </div>
+    </div>
+    </section>
+    <section>
+      <div class="container col-8" id="container">
+        <div >
+          
+            <h5>Sakarya Universitesi Bilgisayar Mühendisligi Programı</h5>
+            <p>Üniversite Sınavından sonra yeni durağımız olan Sakarya Üniversitesine geldik.Şu anda 1.sınıf öğrencisi olarak eğitim görmekteyim.Yazılım ve ingilizce ile</p>
+          
+        </div>
+      </div>
+      </section>
+      <footer>
+        <div class="container-fluid bg-dark bg-opacity-50 p-4"></div>
+      </footer>
+</body>
+</html>
