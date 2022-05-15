@@ -13,7 +13,7 @@
 <div class="container" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
 
 
-    <form action="iletisim.php" name="kontrol" onsubmit=" kontrol()" method="POST">
+    <form action="iletisim.php" name="myform" onsubmit="return kontrol()" method="POST">
 
     <div class="row">
       <div class="col-25">
@@ -22,8 +22,9 @@
       <div class="col-75">
         <input type="text" id="fname" name="firstname" placeholder="Adınız">
       </div>
-      <div id="sonuc" class="col-25"> </div>
+      <div id="dfname"></div>
     </div>
+    
 
     <div class="row">
       <div class="col-25">
@@ -32,6 +33,7 @@
       <div class="col-75">
         <input type="text" id="lname" name="lastname" placeholder="Soaydınız">
       </div>
+      <div id="dlname"></div>
     </div>
 
     <div class="row">
@@ -39,7 +41,7 @@
           <label >Cinsiyet</label>
         </div>
         <div class="col-75">
-          <input type="radio"  name="cinsiyet" value="Erkek" ><label >Erkek </label>
+          <input type="radio"  name="cinsiyet" value="Erkek" checked><label >Erkek </label>
           <input type="radio"  name="cinsiyet" value="Kadın"  ><label >Kadın </label>
           
         </div>
@@ -64,6 +66,7 @@
         <div class="col-75">
           <input type="text"  name="email"placeholder="email adresiniz:">
         </div>
+        <div id="dmail"></div>
       </div>
 
       
@@ -118,12 +121,13 @@
         <div class="col-75">
             <input type="datetime-local" name="dogum"id=dogum>
         </div>
+        <div id="dtarih"></div>
     </div>
     <br>
     <div class="row">
       <input type="submit" value="Gönder">
       
-      <input type="reset"  value="Sfırla">
+      <input type="reset"  value="Sfırla" onclick="sıfırla()">
     </div>
     </form>
   </div>
