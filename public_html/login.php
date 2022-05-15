@@ -2,7 +2,7 @@
 
 
 
-if(($_POST["email"]=="b211210046@sakarya.edu.tr")&&($_POST["sifre"]=="b211210046")){
+if(($_POST['email1']=="b211210046@sakarya.edu.tr")&&($_POST['sifre1']=="b211210046")){
     header("location:http://localhost/public_html/bekleme.php");
 }
 else{

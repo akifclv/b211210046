@@ -1,0 +1,92 @@
+body {
+  background-image: url(winter.jpg);
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 2rem;
+}
+
+.container {
+  background-image: url(winter.jpg);
+  min-width: 30rem;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: .8rem;
+}
+
+.container .container-head {
+  text-align: center;
+}
+
+.container .container-head h3 {
+  color: #fff;
+}
+
+.container .convert-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .convert-box .box {
+  margin: 1rem;
+}
+
+.container .convert-box .box p {
+  color: honeydew;
+}
+
+.container .convert-box .box input {
+  height: 1.7rem;
+  border-radius: .2rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  width: 12rem;
+}
+
+.container .convert-box .box select {
+  width: 10rem;
+  border: none;
+  outline: none;
+  border-radius: .2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.container .convert-btn {
+  text-align: center;
+  margin: 1rem;
+}
+
+.container .convert-btn input {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  background: green;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: .2rem;
+}
+
+.container .convert-btn input:hover {
+  cursor: pointer;
+  background: greenyellow;
+}
+
+.container .display-result {
+  text-align: center;
+  color: yellow;
+  padding: 1rem;
+}
+/*# sourceMappingURL=currency.css.map */
