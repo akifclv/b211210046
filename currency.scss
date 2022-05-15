@@ -1,0 +1,75 @@
+body{
+    background-image: url(winter.jpg);
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
+.container{
+    // background: blue;
+    background-image: url(winter.jpg);
+    min-width: 30rem;
+    top: 50%; left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: .8rem;
+
+
+    .container-head{
+        text-align: center;
+        h3{
+            color: #fff;
+        }
+    }
+
+    .convert-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .box{
+            margin: 1rem;
+            p{
+                color: honeydew;
+            }
+            input{
+                height: 1.7rem;
+                border-radius: .2rem;
+                border: none;
+                outline: none;
+                font-size: 1.2rem;
+                width: 12rem;
+            }
+            select{
+                width: 10rem;
+                border: none;
+                outline: none;
+                border-radius: .2rem;
+                height: 2rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .convert-btn{
+        text-align: center;
+        margin: 1rem;
+        input{
+            width: 5rem;
+            height: 2rem;
+            font-size: 1.2rem;
+            background: green; color: #fff;
+            border: none; outline: none; border-radius: .2rem;
+            &:hover{
+                cursor: pointer;
+                background: greenyellow;
+            }
+        }
+    }
+    .display-result{
+        text-align: center;
+        color: yellow;
+        padding: 1rem;
+    }
+
+
+}
